@@ -15,7 +15,7 @@ class Bot:
         openai.api_key = self.api_key
 
     def transcribe_wav_file(self, file_path):
-        # create a recognizer instance
+        """transcribe audio wav_file"""
         r = sr.Recognizer()
         # open the WAV file
         with sr.AudioFile(file_path) as source:
