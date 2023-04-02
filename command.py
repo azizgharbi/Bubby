@@ -2,13 +2,12 @@ import asyncio
 import sys
 from Bot import Bot
 
-prompt = sys.argv[1]
-bot = Bot()
-
-reply = bot.make_request(prompt)
-
 
 async def main():
+    prompt = sys.argv[1]
+    bot = Bot()
+    reply = bot.make_request(prompt)
+    print(reply)
     await bot.send_msg(reply)
 
 

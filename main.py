@@ -9,7 +9,6 @@ from Bot import Bot
 # Bot Examples
 # https://docs.python-telegram-bot.org/en/stable/examples.html
 
-
 bot = Bot()
 
 

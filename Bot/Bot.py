@@ -29,18 +29,23 @@ class Bot:
 
     def make_request(self, prompt) -> str | None:
         """Make a request using open.ai ChatCompletion"""
-        self.messages.append({"role": "user", "content": prompt})
+        try:
+            self.messages.append({"role": "user", "content": prompt})
 
-        response: Any = (
-            openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=self.messages)
-            or None
-        )
+            response: Any = (
+                openai.ChatCompletion.create(
+                    model="gpt-3.5-turbo", messages=self.messages
+                )
+                or None
+            )
 
-        if response is not None:
-            reply = response.get("choices")[0]["message"].content or None
-            if reply:
-                return reply
-        return response
+            if response is not None:
+                reply = response.get("choices")[0]["message"].content or None
+                if reply:
+                    return reply
+            return response
+        except Exception as error:
+            print(error)
 
     async def send_msg(self, msg) -> None:
         """Echo the assistant message."""
@@ -48,4 +53,4 @@ class Bot:
             self.messages.append({"role": "user", "content": msg})
             await self.bot.send_message(chat_id=CHANNEL_ID, text=msg)
         else:
-            await self.bot.send_message(chat_id=CHANNEL_ID, text="Sorry! again")
+            await self.bot.send_message(chat_id=CHANNEL_ID, text="Something wrong!")
