@@ -1,9 +1,16 @@
-### GPT telegram Bot
+### Introducing Bubby
 
-- To begin, you'll need to create a bot on Telegram.
-- After creating the bot, you'll need to create a channel and add the bot to it.
-- To install the necessary dependencies, run `pip install -r requirements.txt`.
-- Run `python -B main.py`
+- Meet `Bubby`, a `GPT-powered bot` that can provide you with answers through Telegram or directly from your terminal:
+- Create an alias for `Bubby` by adding the following line to your shell configuration file:
 
-- This is a custom integration that takes advantage of the Telegram voice-to-text feature to convert audio messages to text. 
-  The text is then passed to GPT, a powerful language model, to generate responses and facilitate chatbot conversations.
+`alias bubby="python ~/Documents/projects/blubybb_bot/command.py"`
+
+Then, you can interact with `Bubby` in two ways:
+
+- Type `bubby` and use your microphone to ask a question verbally.
+- Type `bubby` "your_question_here" to receive an answer directly in the terminal.
+
+Trust me very useful.
+
+
+
