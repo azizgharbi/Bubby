@@ -1,5 +1,11 @@
 ### Introducing Bubby
 
+- Add the following lines to your `$HOME/.bash_profile` or `$HOME/.bashrc` (if you are using `zsh` then `~/.zprofile` or `~/.zshrc`):
+
+- `export TELEGRAM_TOKEN="TELEGRAM_TOKEN"`
+- `export OPEN_AI_API_KEY="OPEN_AI_API_KEY"`
+
+
 - Meet `Bubby`, a `GPT-powered bot` that can provide you with answers through Telegram or directly from your terminal:
 - Create an alias for `Bubby` by adding the following line to your shell configuration file:
 
