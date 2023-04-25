@@ -11,7 +11,7 @@ Then, you can interact with `Bubby` in two ways:
 - Type `bubby` and use your microphone to ask a question verbally.
 - Type `bubby` "your_question_here" to receive an answer directly in the terminal.
 
-Trust me very useful.
+Trust me `Bubby` is very useful ;).
 
 
 
