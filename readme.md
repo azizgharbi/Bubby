@@ -3,7 +3,8 @@
 - Meet `Bubby`, a `GPT-powered bot` that can provide you with answers through Telegram or directly from your terminal:
 - Create an alias for `Bubby` by adding the following line to your shell configuration file:
 
-`alias bubby="python ~/Documents/projects/blubybb_bot/command.py"`
+`alias bubby="python [project_path]/command.py"`
+- replace `project_path` with the path of where the project cloned.
 
 Then, you can interact with `Bubby` in two ways:
 
