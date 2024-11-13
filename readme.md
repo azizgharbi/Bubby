@@ -1,25 +1,40 @@
-### Introducing bubby
+# Bubby - Your GPT-Powered AI Assistant
 
-- Meet `Bubby`, a `GPT-powered bot` that can provide you with answers through Telegram or directly from your terminal.
+Meet **Bubby**! A powerful, GPT assistant that lets you get answers quickly and conveniently via **Telegram** or directly from your terminal. With a simple setup, you’ll be able to query Bubby and get responses either by typing or using your voice.
 
-#### Setup:
+## Features
 
-- Add the following lines to your `$HOME/.bash_profile` or `$HOME/.bashrc` (if you are using `zsh` then `~/.zprofile` or `~/.zshrc`):
+- **Telegram Integration**: Ask questions through Telegram using Bubby’s conversational AI.
+- **Terminal Interaction**: Ask questions directly in the terminal by typing or using voice input.
+- **GPT-Powered Responses**: Enjoy fast, insightful answers powered by OpenAI's GPT model.
 
-- `export TELEGRAM_TOKEN="TELEGRAM_TOKEN"`.
-- `export OPEN_AI_API_KEY="OPEN_AI_API_KEY"`.
+---
 
-- Create an alias for `Bubby` by adding the following line to your shell configuration file:
+## Getting Started
 
-`alias bubby="python [project_path]/command.py"`.
-- replace `project_path` with the path of where the project cloned.
+Follow these steps to set up Bubby and get started with terminal or Telegram-based interaction.
 
-Then, you can interact with `Bubby` in two ways:
+### 1. Configure Environment Variables
 
-- Type `bubby` and use your microphone to ask a question verbally.
-- Type `bubby` "your_question_here" to receive an answer directly in the terminal.
+Add the following lines to your shell configuration file (choose the one that matches your shell):
+- **Bash**: `$HOME/.bash_profile` or `$HOME/.bashrc`
+- **Zsh**: `$HOME/.zprofile` or `$HOME/.zshrc`
 
-Trust me `Bubby` is very useful ;).
+```bash
+export TELEGRAM_TOKEN="your_telegram_token_here"
+export OPEN_AI_API_KEY="your_open_ai_api_key_here"
+```
+
+Add alias:
+
+```bash
+alias bubby="python [project_path]/command.py"
+```
+
+## Why Bubby?
+
+- Bubby is perfect for those who want the power of GPT without needing to install a mobile application.
+- It provides a convenient, lightweight alternative to mobile apps, ideal for quick answers directly from your terminal or through Telegram.
 
 
 
